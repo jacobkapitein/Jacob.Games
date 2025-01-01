@@ -83,9 +83,9 @@ namespace Jacob.Games.Domain.Tests.Features
         
         public virtual async System.Threading.Tasks.Task FeatureBackgroundAsync()
         {
-#line 3
+#line 7
 #line hidden
-#line 4
+#line 8
     await testRunner.GivenAsync("the following board", @"┌────────────────────────┐
 │ .  .  .  .  .  .  .  . │
 │ p  p  p  p  p  p  p  p │
@@ -100,13 +100,13 @@ namespace Jacob.Games.Domain.Tests.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Move white pawn")]
-        public async System.Threading.Tasks.Task MoveWhitePawn()
+        [NUnit.Framework.DescriptionAttribute("Move white pawn should succeed")]
+        public async System.Threading.Tasks.Task MoveWhitePawnShouldSucceed()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Move white pawn", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 18
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Move white pawn should succeed", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 22
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -116,13 +116,13 @@ namespace Jacob.Games.Domain.Tests.Features
             else
             {
                 await this.ScenarioStartAsync();
-#line 3
+#line 7
 await this.FeatureBackgroundAsync();
 #line hidden
-#line 19
+#line 23
         await testRunner.WhenAsync("\'6,4\' moves to \'5,4\'", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 20
+#line 24
         await testRunner.ThenAsync("the board should look as follows", @"┌────────────────────────┐
 │ .  .  .  .  .  .  .  . │
 │ p  p  p  p  p  p  p  p │
@@ -145,7 +145,7 @@ await this.FeatureBackgroundAsync();
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Move black pawn should succeed", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 34
+#line 38
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -155,13 +155,13 @@ await this.FeatureBackgroundAsync();
             else
             {
                 await this.ScenarioStartAsync();
-#line 3
+#line 7
 await this.FeatureBackgroundAsync();
 #line hidden
-#line 35
+#line 39
         await testRunner.WhenAsync("\'1,3\' moves to \'2,3\'", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 36
+#line 40
         await testRunner.ThenAsync("the board should look as follows", @"┌────────────────────────┐
 │ .  .  .  .  .  .  .  . │
 │ p  p  p  .  p  p  p  p │
@@ -184,7 +184,7 @@ await this.FeatureBackgroundAsync();
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Moving a white pawn backwards should fail", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 50
+#line 54
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -194,13 +194,13 @@ await this.FeatureBackgroundAsync();
             else
             {
                 await this.ScenarioStartAsync();
-#line 3
+#line 7
 await this.FeatureBackgroundAsync();
 #line hidden
-#line 51
+#line 55
         await testRunner.WhenAsync("\'6,4\' moves to \'7,4\'", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 52
+#line 56
         await testRunner.ThenAsync("the board should not have changed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
@@ -214,7 +214,7 @@ await this.FeatureBackgroundAsync();
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Moving a black pawn backwards should fail", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 54
+#line 58
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -224,13 +224,13 @@ await this.FeatureBackgroundAsync();
             else
             {
                 await this.ScenarioStartAsync();
-#line 3
+#line 7
 await this.FeatureBackgroundAsync();
 #line hidden
-#line 55
+#line 59
         await testRunner.WhenAsync("\'1,3\' moves to \'0,3\'", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 56
+#line 60
         await testRunner.ThenAsync("the board should not have changed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }

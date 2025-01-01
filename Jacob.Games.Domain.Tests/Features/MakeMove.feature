@@ -1,5 +1,9 @@
 Feature: MakeMove
 
+# Lower case = black
+# Upper case = white
+# P,p = pawn
+
 Background: 
     Given the following board
     """
@@ -15,7 +19,7 @@ Background:
     └────────────────────────┘
     """
 
-    Scenario: Move white pawn
+    Scenario: Move white pawn should succeed
         When '6,4' moves to '5,4'
         Then the board should look as follows
         """

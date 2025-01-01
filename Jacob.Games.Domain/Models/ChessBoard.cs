@@ -39,11 +39,6 @@ public class ChessBoard
 
         if (pieceAtFrom is null)
             return;
-
-        if (pieceAtFrom.Value.Side == Side.Black && to.y <= from.y)
-            return;
-        if (pieceAtFrom.Value.Side == Side.White && to.y >= from.y)
-            return;
         
         Board[to.y, to.x] = pieceAtFrom;
         Board[from.y, from.x] = null;

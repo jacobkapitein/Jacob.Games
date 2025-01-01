@@ -97,8 +97,8 @@ public class ChessBoardTransformations
     {
         var parts = input.Split(',');
 
-        int x = int.Parse(parts[0]);
-        int y = int.Parse(parts[1]);
+        int y = int.Parse(parts[0]);
+        int x = int.Parse(parts[1]);
 
         if (x < 0 || x > 7 || y < 0 || y > 7)
         {
